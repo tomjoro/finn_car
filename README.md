@@ -10,13 +10,6 @@ Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 # Project Version 1
 
-## Architecture
-
-### Description
-
-![arch](arch.png?raw=true "Arch")
-
-
 This is a semi-autonomous car world multi-player game engine.
 
 * CARS
@@ -39,6 +32,12 @@ Collision
  * If a Car hits a Moose it is stuck for 2.5 seconds * Speed factor
  * If a Car hits a Wall it is stuck for 5 seconds * Speed factor
  * If a Car hits another their cumulative speed determines wait 
+
+## Architecture
+
+Note: in version 1 it will not be distributed. So just do it all in this appliction!
+
+![arch](arch.png?raw=true "Arch")
 
 ### Implementation
 
