@@ -9,7 +9,7 @@ defmodule FinnCar.Application do
   def start(_type, _args) do
     children = [
       # Start the Ecto repository
-      FinnCar.Repo,
+      # FinnCar.Repo,
       # Start the Telemetry supervisor
       FinnCarWeb.Telemetry,
       # Start the PubSub system
