@@ -18,6 +18,10 @@ defmodule FinnCar.Moose do
     grid
     direction
 
+
+    Everything is [row, column] or [height, width]
+    i.e. [y, x].. hmmm backwards.
+
   """
   use GenServer
 
@@ -61,6 +65,7 @@ defmodule FinnCar.Moose do
 
     state = cond do
       div == 0 -> move_right(state)
+      true -> state
     end
 
     {:reply, :ok, state}
@@ -81,6 +86,8 @@ defmodule FinnCar.Moose do
       c
     end
 
+    #IO.inspect r, label: "r"
+    #IO.inspect c, label: "c"
     %{state | position: [r, c]}
   end
 
